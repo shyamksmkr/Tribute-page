@@ -1,0 +1,347 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Saira+Extra+Condensed:100,200,300,400,500,600,700,800|Saira:100,200,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/* Text Styles */
+/* Importing Open Sans for body font */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+
+
+
+
+/* Body Styles */
+body {
+  font-family: --font-sans; /* Setting font-family to the value of --font-sans */
+  margin: 0; /* Resetting margin */
+  padding: 0; /* Resetting padding */
+}
+
+/* Timeline Styles */
+.timeline {
+  width: 30%; /* Setting width to 30% */
+  height: 100%; /* Setting height to 100% */
+  position: absolute; /* Setting position to absolute */
+  /* Setting z-index to -1 */
+  justify-items: center; /* Centering items */
+  align-items: center; /* Centering items */
+  overflow-x: hidden; /* Hiding horizontal overflow */
+  text-align: center; /* Centering text */
+  top: 0; /* Aligning to top */
+  left: 0; /* Aligning to left */
+  background-color: white; /* Setting background color to white */
+  font-family: "Montserrat", sans-serif; /* Setting font family to Montserrat */
+  flex-direction: column; /* Setting flex direction to column */
+}
+
+.timeline::after {
+  height: 3300px; /* Setting height of pseudo-element */
+  content: ""; /* Adding content to pseudo-element */
+  position: absolute; /* Setting position to absolute */
+  width: 6px; /* Setting width to 6px */
+  background-color: #00203fff; /* Setting background color */
+  top: 0; /* Aligning to top */
+  bottom: 0; /* Aligning to bottom */
+  left: 35px; /* Aligning to left */
+  margin-top: 135px; /* Adding top margin */
+}
+
+/* Container Styles */
+.container {
+  text-align: left; /* Aligning text to left */
+  padding: 10px 40px; /* Adding padding */
+  position: relative; /* Setting position to relative */
+  background-color: inherit; /* Inheriting background color */
+  width: 100%; /* Setting width to 100% */
+}
+
+.container::after {
+  content: ""; /* Adding content to pseudo-element */
+  position: absolute; /* Setting position to absolute */
+  width: 20px; /* Setting width to 20px */
+  height: 20px; /* Setting height to 20px */
+  background-color: #00203fff; /* Setting background color */
+  border: 4px solid grey; /* Adding border */
+  top: 45px; /* Aligning to top */
+  border-radius: 50%; /* Adding border radius */
+  z-index: 1; /* Setting z-index */
+}
+
+/* Left and Right Styles */
+.left {
+  left: 10px; /* Aligning to left */
+}
+
+.right {
+  left: 50%; /* Aligning to 50% from left */
+}
+
+.left::after,
+.right::after {
+  left: 15px; /* Aligning to left */
+}
+
+.right::after {
+  left: -16px; /* Aligning to left */
+}
+
+/* Content Styles */
+.content {
+  width: 70%; /* Setting width to 70% */
+  padding: 20px 30px; /* Adding padding */
+  background-color: white; /* Setting background color */
+  position: relative; /* Setting position to relative */
+  border-radius: 6px; /* Adding border radius */
+}
+
+/* Timeline Header Styles */
+#timeline-header {
+  margin-top: 70px; /* Adding top margin */
+  color: black; /* Setting text color */
+  font-family: --font-title; /* Setting font family to font-title */
+  letter-spacing: 1.5px; /* Adding letter spacing */
+  font-weight: 100; /* Setting font weight */
+  font-size: 2.6em; /* Setting font size */
+}
+
+/* Main Content Styles */
+.main-content {
+  height: 100%; /* Setting height to 100% */
+  width: 70%; /* Setting width to 70% */
+  position: absolute; /* Setting position to absolute */
+  z-index: 1; /* Setting z-index to -1 */
+  top: 0; /* Aligning to top */
+  overflow-x: hidden; /* Hiding horizontal overflow */
+  padding-top: 20px; /* Adding top padding */
+  right: 0; /* Aligning to right */
+  background-color: #00203fff; /* Setting background color */
+}
+
+/* Bio Styles */
+.bio {
+  margin-left: 50px; /* Adding left margin */
+  height: 90%; /* Setting height to 90% */
+  width: 80%; /* Setting width to 80% */
+  display: flex; /* Setting display to flex */
+  align-items: center; /* Centering items */
+  flex-direction: row; /* Setting flex direction to row */
+}
+
+/* Image Styles */
+#image {
+  max-height: 325px; /* Setting max height */
+  max-width: 325px; /* Setting max width */
+  border-radius: 50%; /* Adding border radius */
+  display: block; /* Setting display to block */
+}
+
+/* Title Styles */
+#title {
+  margin-left: 20px; /* Adding left margin */
+  margin-top: 80x; /* Adding top margin */
+}
+
+h1 {
+  font-weight: 400; /* Setting font weight */
+  font-family: "Montserrat"; /* Setting font family */
+  font-size: 48px; /* Setting font size */
+  color: white; /* Setting text color */
+}
+
+/* Tribute Info Styles */
+#tribute-info {
+  min-width: 50px; /* Setting min width */
+  max-width: 500px; /* Setting max width */
+  font-size: 15px; /* Setting font size */
+  margin-left: 20px; /* Adding left margin */
+  margin-top: 80x; /* Adding top margin */
+}
+
+/* Image Caption Styles */
+#img-caption {
+  min-width: 50px; /* Setting min width */
+  max-width: 500px; /* Setting max width */
+  font-size: 15px; /* Setting font size */
+  text-align: center; /* Centering text */
+  color: white; /* Setting text color */
+}
+
+/* Tribute Link Styles */
+#tribute-link {
+  display: block; /* Setting display to block */
+  min-height: 50px; /* Setting min height */
+  min-width: 180px; /* Setting min width */
+  text-decoration: none; /* Removing text decoration */
+  font-size: 15px; /* Setting font size */
+  color: #fff; /* Setting text color */
+  background: #e74c3c; /* Setting background color */
+  width: 50%; /* Setting width to 50% */
+  text-align: center; /* Centering text */
+  padding: 1rem 2rem; /* Adding padding */
+  margin-top: 1rem; /* Adding top margin */
+  margin-left: 20px; /* Adding left margin */
+  border-radius: 3px; /* Adding border radius */
+  text-transform: uppercase; /* Uppercasing text */
+  transition: all 0.2s; /* Adding transition */
+  box-sizing: border-box; /* Setting box sizing */
+}
+
+/* Centered Element Styles */
+.centered-element {
+  height: 100px; /* Setting height to 100px */
+  width: 100px; /* Setting width to 100px */
+  position: absolute; /* Setting position to absolute */
+  left: 50%; /* Aligning to 50% from left */
+  margin-left: -50px; /* Adjusting left margin */
+  top: 50%; /* Aligning to 50% from top */
+  margin-top: -50px; /* Adjusting top margin */
+}
+
+
+
+/* Small Screen Timeline Styles */
+.main-content-small {
+  height: 900px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right: 0;
+  background-color: #00203fff;
+}
+
+
+
+#image-small {
+  max-height: 325px;
+  max-width: 325px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+#title-small {
+  text-align: center;
+  /*   margin-left: 20px; */
+  margin-top: 80x;
+}
+
+.h1-small {
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-size: 48px;
+  color: white;
+}
+
+#tribute-info-small {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 50px;
+  max-width: 500px;
+  font-size: 15px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#img-caption-small {
+  min-width: 50px;
+  max-width: 500px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#tribute-link-small {
+  display: block;
+  min-height: 50px;
+  min-width: 180px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  background: #e74c3c;
+  width: 50%;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+.timeline-small {
+  width: 100%; /* Setting width to 100% */
+  margin-top: 900px; /* Adding top margin */
+  position: absolute; /* Setting position to absolute */
+  z-index: -1; /* Setting z-index to -1 */
+  justify-items: center; /* Centering items */
+  align-items: center; /* Centering items */
+  overflow-x: hidden; /* Hiding horizontal overflow */
+  overflow: hidden; /* Hiding overflow */
+  text-align: center; /* Centering text */
+  top: 0; /* Aligning to top */
+  left: 0; /* Aligning to left */
+  background-color: white; /* Setting background color */
+  font-family: "Montserrat", sans-serif; /* Setting font family */
+  flex-direction: column; /* Setting flex direction to column */
+}
+
+.timeline-small::after {
+  content: ""; /* Adding content to pseudo-element */
+  position: absolute; /* Setting position to absolute */
+  width: 6px; /* Setting width to 6px */
+  background-color: #00203fff; /* Setting background color */
+  top: 0; /* Aligning to top */
+  bottom: 0; /* Aligning to bottom */
+  left: 35px; /* Aligning to left */
+  margin-top: 135px; /* Adding top margin */
+}
+
+/* Timeline Header for Small Screen */
+#timeline-header-small {
+  margin-top: 70px; /* Adding top margin */
+  color: black; /* Setting text color */
+  font-family: --font-title; /* Setting font family */
+  letter-spacing: 1.5px; /* Adding letter spacing */
+  font-weight: 100; /* Setting font weight */
+  font-size: 2.6em; /* Setting font size */
+}
+
+/* Small Screen Specific Styles */
+/* Default styles */
+#small {
+  display: block;
+}
+
+#big {
+  display: none;
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  #small {
+    display: none;
+  }
+
+  #big {
+    display: block;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 991px) {
+  #small {
+    display: block;
+  }
+
+  #big {
+    display: none;
+  }
+}
+
